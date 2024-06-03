@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+
+    <h1>Bilgi Formu</h1>
+
+    <form action="instert_data.php" method="post">
+
+        <label for="isim">İsim</label>
+        <input type="text" id="isim" name="isim">
+        <label for="soyisim">Soyisim</label>
+        <input type="text" id="soyisim" name="soyisim">
+        <label for="boy">Lütfen boyunuzu giriniz</label>
+        <input type="number" id="boy" name="boy">
+        <label for="kilo">Lütfen kilonuzu giriniz</label>
+        <input type="number" id="kilo" name="kilo">
+        <label for="yas">Lütfen yaşınızı giriniz</label>
+        <input type="yas" id="yas" name="yas">
+
+        <label for="kahvalti">Kahvaltı giriniz</label>
+        <select id="kahvalti" name="kahvalti">
+            <option value="45">Muz</option>
+            <option value="90">Yumurta</option>
+            <option value="120">Menemen</option>
+        </select>
+        
+        <label for="oglen_yemegi">Öğlen Yemeği Seçiniz</label>
+        <select id="oglen_yemegi" name="oglen_yemegi">
+            <option value="200">Makarna</option>
+            <option value="100">Kızartma</option>
+            <option value="120">İçli Köfte</option>
+        </select>
+        
+    
+        <label for="aksam_yemegi">Akşam Yemeği Seçiniz</label>
+        <select id="aksam_yemegi" name="aksam_yemegi">
+            <option value="400">Tavuk Döner</option>
+            <option value="100">Pilav</option>
+            <option value="120">Dolma</option>
+        </select>
+        
+        <select id="kalori_topla" name="kalori_topla">
+            <option value="+">+</option>
+          </select><br>
+
+        <label>
+            <input type="checkbox" name="terms">
+            Gizlilik koşullarını kabul ediyorum
+        </label>
+
+        <br>
+
+        <button>Send</button>
+
+    </form>
+
+</body>
+</html>
